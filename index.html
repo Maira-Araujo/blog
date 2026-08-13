@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aura Essence Studio - O Maravilhoso Mundo dos Perfumes</title>
+        <title>Aura Perfumaria - Fragrâncias Exclusivas</title>
         <style>
             * {
                 box-sizing: border-box;
@@ -13,23 +13,23 @@
             }
 
             body {
-                background-color: #0f172a;
+                background-color: #120e17;
                 color: #FFFFFF;
-                background: linear-gradient(to right, #0f172a 50%, #1e1b4b 50%);
+                background: linear-gradient(to right, #120e17 50%, #1f1528 50%);
             }
 
             /* Cabeçalho */
             header {
-                background: linear-gradient(to right, #8b5cf6, #6d28d9);
+                background: linear-gradient(to right, #8a2be2, #4b0082);
                 color: #FFFFFF;
                 text-align: center;
-                padding: 24px 16px;
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+                padding: 30px 16px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
             }
 
             header h1 {
-                font-size: 2.5rem;
-                letter-spacing: 2px;
+                font-size: 2.6rem;
+                letter-spacing: 3px;
                 text-transform: uppercase;
                 margin-bottom: 8px;
             }
@@ -37,9 +37,213 @@
             header h3 {
                 font-size: 1.1rem;
                 font-weight: 300;
+                letter-spacing: 1px;
             }
 
             /* Conteúdo Principal */
             main {
                 max-width: 1000px;
                 margin: 20px auto;
+                padding: 20px;
+                background-color: transparent;
+            }
+
+            .loja-banner {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 24px;
+                background-color: rgba(255, 255, 255, 0.05);
+                padding: 16px;
+                border-radius: 8px;
+                border: 1px solid rgba(225, 175, 209, 0.1);
+            }
+
+            .loja-banner img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px solid #e1afd1;
+            }
+
+            h2 {
+                color: #e1afd1;
+                margin-bottom: 8px;
+            }
+
+            .subtitulo {
+                color: #d1d5db;
+                font-size: 0.95rem;
+            }
+
+            p {
+                line-height: 1.6;
+                font-size: 1rem;
+                margin-bottom: 12px;
+                color: #e5e7eb;
+            }
+
+            .secao-titulo {
+                margin: 30px 0 15px 0;
+                font-size: 1.5rem;
+                border-left: 4px solid #e1afd1;
+                padding-left: 10px;
+            }
+
+            /* Catálogo / Vitrine de Produtos */
+            .catalogo {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: space-between;
+            }
+
+            .card-produto {
+                background-color: #1f1528;
+                border: 1px solid #3b254a;
+                border-radius: 8px;
+                width: calc(33.33% - 14px);
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+
+            .card-produto:hover {
+                transform: translateY(-5px);
+                box-shadow: 0px 6px 20px rgba(138, 43, 226, 0.3);
+            }
+
+            .card-produto img {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+                border-radius: 6px;
+                margin-bottom: 12px;
+            }
+
+            .card-produto h4 {
+                font-size: 1.1rem;
+                margin-bottom: 4px;
+            }
+
+            .card-produto .categoria-produto {
+                font-size: 0.85rem;
+                color: #9ca3af;
+                margin-bottom: 10px;
+            }
+
+            .card-produto .preco {
+                font-size: 1.25rem;
+                font-weight: bold;
+                color: #34d399;
+                margin-bottom: 12px;
+            }
+
+            .btn-comprar {
+                background: linear-gradient(to right, #8a2be2, #6a0dad);
+                color: #FFFFFF;
+                border: none;
+                padding: 10px 16px;
+                border-radius: 4px;
+                font-weight: bold;
+                cursor: pointer;
+                width: 100%;
+                transition: opacity 0.2s ease;
+            }
+
+            .btn-comprar:hover {
+                opacity: 0.9;
+            }
+
+            /* Responsividade para celulares */
+            @media (max-width: 768px) {
+                .card-produto {
+                    width: calc(50% - 10px);
+                }
+            }
+
+            @media (max-width: 480px) {
+                .card-produto {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Aura Perfumaria</h1>
+            <h3>Elegância, sofisticação e marcantes fragrâncias a um clique de você!</h3>
+        </header>
+
+        <main>
+            <div class="loja-banner">
+                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=150" alt="Logotipo Aura Perfumaria">
+                <div>
+                    <h2>Bem-vindo à Aura Perfumaria</h2>
+                    <p class="subtitulo">Curadoria especial por: Maira</p>
+                </div>
+            </div>
+
+            <p>
+                Descubra nossa coleção exclusiva de perfumes importados, fragrâncias marcantes e essências marcantes para todas as ocasiões. 
+                Escolha o seu perfume ideal online e receba com toda a comodidade na sua casa.
+            </p>
+
+            <h3 class="secao-titulo">Destaques da Coleção</h3>
+
+            <div class="catalogo">
+                <div class="card-produto">
+                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=500" alt="Perfume Floral Rose">
+                    <h4>Eau de Parfum Floral Rose (100ml)</h4>
+                    <span class="categoria-produto">Perfumes Femininos</span>
+                    <span class="preco">R$ 349,90</span>
+                    <button class="btn-comprar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="card-produto">
+                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=500" alt="Perfume Amadeirado Intense">
+                    <h4>Wood Intense Noir (100ml)</h4>
+                    <span class="categoria-produto">Perfumes Masculinos</span>
+                    <span class="preco">R$ 289,90</span>
+                    <button class="btn-comprar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="card-produto">
+                    <img src="https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?w=500" alt="Perfume Vanilla Gold">
+                    <h4>Vanilla & Amber Luxe (80ml)</h4>
+                    <span class="categoria-produto">Edição Limitada</span>
+                    <span class="preco">R$ 410,00</span>
+                    <button class="btn-comprar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="card-produto">
+                    <img src="https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=500" alt="Perfume Cítrico Fresh">
+                    <h4>Citrus Summer Breeze (100ml)</h4>
+                    <span class="categoria-produto">Fragâncias Cítricas</span>
+                    <span class="preco">R$ 199,90</span>
+                    <button class="btn-comprar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="card-produto">
+                    <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=500" alt="Perfume Árabe Royal">
+                    <h4>Royal Oud Oriental (90ml)</h4>
+                    <span class="categoria-produto">Coleção Árabe</span>
+                    <span class="preco">R$ 520,00</span>
+                    <button class="btn-comprar">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="card-produto">
+                    <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?w=500" alt="Kit Miniaturas Elegance">
+                    <h4>Kit Discovery Miniaturas (3x15ml)</h4>
+                    <span class="categoria-produto">Kits & Presentes</span>
+                    <span class="preco">R$ 179,90</span>
+                    <button class="btn-comprar">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
